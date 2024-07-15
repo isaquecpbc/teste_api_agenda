@@ -1,15 +1,5 @@
-# Desenvolvimento de Lista de Itens em React + PHP.
-Pequena aplicação REST API com laravel 10 e FRONTEND com React consumindo a api;
-
-
-### para iniciar o React:
-
-
-1. na raiz do projeto, ``` $ cd test-app ```
-2. ``` $ npm install ```
-3. ``` $ npm start ```
-
-### Teste o acesso do app em http://localhost:3000/
+# Desenvolvimento de API Rest com PHP/MySql/Swagger/PHPUnity.
+Pequena aplicação REST API com laravel 10, MySql para o banco de dados, PHPUnity para testes unitários e Swagger para documentação;
 
 
 ### Para iniciar o laravel com o docker:
