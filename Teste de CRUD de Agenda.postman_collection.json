@@ -1,0 +1,287 @@
+{
+	"info": {
+		"_postman_id": "4ff8d28a-ccdf-43ea-bdd4-7386982c6cea",
+		"name": "Teste de CRUD de Agenda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10250448"
+	},
+	"item": [
+		{
+			"name": "schedules",
+			"item": [
+				{
+					"name": "get schedules",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzIxMDI5Njk2LCJleHAiOjE3MjEwMzMyOTYsIm5iZiI6MTcyMTAyOTY5NiwianRpIjoiajJXSDY2ajRtYmkyZzJpeSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.TKgCrAiZ5jnPLDpS-BR0L-HTp1d2ZXp_1_i549NNG7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/api/schedules",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"schedules"
+							]
+						},
+						"description": "get tasks model "
+					},
+					"response": []
+				},
+				{
+					"name": "store schedules",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzIxMDI5Njk2LCJleHAiOjE3MjEwMzMyOTYsIm5iZiI6MTcyMTAyOTY5NiwianRpIjoiajJXSDY2ajRtYmkyZzJpeSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.TKgCrAiZ5jnPLDpS-BR0L-HTp1d2ZXp_1_i549NNG7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "profundezas do Oceano",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Viagem",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "BoJack embarca em uma aventura nas desconhecidas profundezas do Oceano para poder assistir à estreia de seu filme Secretariat. Sem álcool, drogas ou com quem conversar, o cavalo reencontra uma antiga colega de trabalho que decepcionou no passado e tenta de todas as formas se redimir. O silêncio nunca foi tão ensurdecedor na TV.",
+									"description": "\n",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "start_at",
+									"value": "2024-07-19 05:00:00",
+									"type": "text"
+								},
+								{
+									"key": "conclusion_at",
+									"value": "2024-07-19 23:45:00",
+									"type": "text"
+								},
+								{
+									"key": "user_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/api/schedules",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"schedules"
+							]
+						},
+						"description": "Store task by form-data inputs"
+					},
+					"response": []
+				},
+				{
+					"name": "update schedules",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzIxMDI5Njk2LCJleHAiOjE3MjEwMzMyOTYsIm5iZiI6MTcyMTAyOTY5NiwianRpIjoiajJXSDY2ajRtYmkyZzJpeSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.TKgCrAiZ5jnPLDpS-BR0L-HTp1d2ZXp_1_i549NNG7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\": \"2\",\n    \"title\": \"Profundezas do Oceano Pacifico\",\n    \"type\": \"Viagem\",\n    \"description\": \"BoJack embarca em uma aventura nas desconhecidas profundezas do Oceano para poder assistir à estreia de seu filme Secretariat. Sem álcool, drogas ou com quem conversar, o cavalo reencontra uma antiga colega de trabalho que decepcionou no passado e tenta de todas as formas se redimir. O silêncio nunca foi tão ensurdecedor na TV.\",\n    \"status\": false,\n    \"start_at\": \"2024-07-18 05:00:00\",\n    \"conclusion_at\": \"2024-07-18 23:45:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/api/schedules/4",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"schedules",
+								"4"
+							]
+						},
+						"description": "put update task by raw text type json"
+					},
+					"response": []
+				},
+				{
+					"name": "get schedules by logged user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzIxMDI1ODM4LCJleHAiOjE3MjEwMjk0MzgsIm5iZiI6MTcyMTAyNTgzOCwianRpIjoidFhGOEZ1TXVrVzlvaG9NdyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.BGnsxix-kGDsuT5olBApwM23cOK4IGwXqdZW4NpW7do",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost/api/schedules/get_all_by_user/list",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"schedules",
+								"get_all_by_user",
+								"list"
+							]
+						},
+						"description": "Get list of tasks by logged user"
+					},
+					"response": []
+				},
+				{
+					"name": "Update status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2FwaS9hdXRoL2xvZ2luIiwiaWF0IjoxNzIxMDI5Njk2LCJleHAiOjE3MjEwMzMyOTYsIm5iZiI6MTcyMTAyOTY5NiwianRpIjoiajJXSDY2ajRtYmkyZzJpeSIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.TKgCrAiZ5jnPLDpS-BR0L-HTp1d2ZXp_1_i549NNG7M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost/api/schedules/4/update_status",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"api",
+								"schedules",
+								"4",
+								"update_status"
+							]
+						},
+						"description": "Post for update only status of task"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "localhost",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2NTU3NzkwOTYsImV4cCI6MTY1NTc4MjY5NiwibmJmIjoxNjU1Nzc5MDk2LCJqdGkiOiJScVlWZWhJeFZxRk5hYUJPIiwic3ViIjo4LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.lUdI7jxPdaWSJfVSQyJaZP7m7fsRO5w-ZfVqbSFpdQg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						""
+					]
+				},
+				"description": "get tasks model "
+			},
+			"response": []
+		},
+		{
+			"name": "auth login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"admin@adminstradores.adm\",\n    \"password\": \"admin@adm\"\n}"
+				},
+				"url": {
+					"raw": "localhost/api/auth/login",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				},
+				"description": "Login JWT Laravel api"
+			},
+			"response": []
+		}
+	]
+}
